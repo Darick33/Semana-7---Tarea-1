@@ -82,7 +82,7 @@ export class NuevafacturaComponent implements OnInit {
     });
   }
   facutaPhp() {
-    window.location.href = 'http://localhost/Sexto/gias2/Sexto/Proyectos/03MVC/reports/factura.report.php?idFactura=1';
+    window.open(  'http://localhost/Sexto/gias2/Sexto/Proyectos/03MVC/reports/factura.report.php')
 }
 
 

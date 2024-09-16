@@ -108,7 +108,10 @@ if (isset($_GET['idFactura'])) {
     $pdf->Cell(0, 10, "Nota: Gracias por su compra.", 0, 1, 'L');
     
     // Salida del PDF
-    $pdf->Output();
+        // Enviar encabezado para descarga del archivo
+        header('Content-Type: application/pdf');
+        header('Content-Disposition: attachment; filename="factura.pdf"');
+        $pdf->Output();
 }else{
        
     // Configurar fuente y encabezado
